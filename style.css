@@ -3,6 +3,7 @@
     margin: 0;
 }
 
+
 nav{
     display: flex;
     justify-content: space-between;
@@ -69,7 +70,7 @@ main{
     justify-content: center;
 }
 input{
-    padding: 25px 30px;
+    padding: 25px 400px 25px 30px;
     margin-right: 40px;
     border: 0;
 }
@@ -93,3 +94,46 @@ footer{
 .foot{
     padding: 5px;
 }
+
+ /* rwd */
+ @media screen and (max-width: 768px ) {
+     .navbar{
+         display: none;
+     }
+     nav{
+        justify-content: center;
+        height: 65px
+     }
+     .logo{
+         margin-left: 0;
+     }
+     .logo img{
+        width: 180px;
+    }
+    .promote h2{
+        max-width: 80%;
+        transform:   translateX(10%);
+        font-size: 26px;
+    }
+    .promote h3{
+        font-size: 22px;
+        margin-top: -30px;
+    }
+    .promote p{
+        font-size: 16px;
+    }
+   
+    input{
+        
+        margin-right: 0;
+        padding: 5px 100px 5px 10px;
+   
+    }
+    button{
+       
+        padding: 5px 15px;
+        color: white;
+        font-size: 12px;
+    }
+     
+ }
